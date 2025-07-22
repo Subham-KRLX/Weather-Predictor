@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="rain-container">
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+        <div class="rain"></div>
+    </div>
+
+    <div class="app-container">
+        <div class="sidebar">
+            <div class="location-card active" data-city="pune">
+                <div class="location-header">
+                    <h3>Pune</h3>
+                    <span class="location-tag">My Location • HOME</span>
+                </div>
+                <div class="temperature">25°</div>
+                <div class="condition">Rain</div>
+                <div class="temp-range">H:27° L:22°</div>
+            </div>
+
+            <div class="location-card" data-city="delhi">
+                <div class="location-header">
+                    <h3>New Delhi</h3>
+                    <span class="time">5:00 PM</span>
+                </div>
+                <div class="temperature">32°</div>
+                <div class="condition">Mostly Cloudy</div>
+                <div class="temp-range">H:32° L:27°</div>
+            </div>
+
+            <div class="location-card" data-city="mumbai">
+                <div class="location-header">
+                    <h3>Mumbai</h3>
+                    <span class="time">5:00 PM</span>
+                </div>
+                <div class="temperature">28°</div>
+                <div class="condition">Rain</div>
+                <div class="temp-range">H:28° L:27°</div>
+            </div>
+        </div>
+
+        <div class="main-content">
+            <div class="main-weather">
+                <div class="home-indicator">🏠 HOME</div>
+                <h1 class="city-name">Pune</h1>
+                <div class="current-temp">25°</div>
+                <div class="current-condition">Rain</div>
+                <div class="current-range">H:27° L:22°</div>
+                <div class="weather-description">
+                    Cloudy conditions expected around 9pm. Wind gusts are up to 35 kph.
+                </div>
+            </div>
+
+            <div class="hourly-forecast">
+                <div class="hourly-item">
+                    <div class="hour">Now</div>
+                    <div class="hour-icon">🌧️</div>
+                    <div class="hour-temp">25°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">5PM</div>
+                    <div class="hour-icon">🌧️</div>
+                    <div class="rain-chance">40%</div>
+                    <div class="hour-temp">25°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">6PM</div>
+                    <div class="hour-icon">🌧️</div>
+                    <div class="rain-chance">40%</div>
+                    <div class="hour-temp">24°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">7PM</div>
+                    <div class="hour-icon">🌧️</div>
+                    <div class="rain-chance">40%</div>
+                    <div class="hour-temp">24°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">7:13PM</div>
+                    <div class="hour-icon">🌅</div>
+                    <div class="sunset-label">Sunset</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">8PM</div>
+                    <div class="hour-icon">⛅</div>
+                    <div class="rain-chance">35%</div>
+                    <div class="hour-temp">23°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">9PM</div>
+                    <div class="hour-icon">☁️</div>
+                    <div class="hour-temp">23°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">10PM</div>
+                    <div class="hour-icon">☁️</div>
+                    <div class="hour-temp">23°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">11PM</div>
+                    <div class="hour-icon">☁️</div>
+                    <div class="hour-temp">23°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">12AM</div>
+                    <div class="hour-icon">☁️</div>
+                    <div class="hour-temp">22°</div>
+                </div>
+                <div class="hourly-item">
+                    <div class="hour">1AM</div>
+                    <div class="hour-icon">☁️</div>
+                    <div class="hour-temp">22°</div>
+                </div>
+            </div>
+
+            <div class="bottom-section">
+                <div class="forecast-section">
+                    <h3>📅 10-DAY FORECAST</h3>
+                    <div class="forecast-list">
+                        <div class="forecast-item">
+                            <span class="day">Today</span>
+                            <div class="forecast-icon">🌧️</div>
+                            <span class="rain-percent">65%</span>
+                            <span class="low-temp">22°</span>
+                            <div class="temp-bar">
+                                <div class="temp-range-bar">
+                                    <div class="temp-fill" style="left: 20%; width: 60%;"></div>
+                                </div>
+                            </div>
+                            <span class="high-temp">27°</span>
+                        </div>
+                        <div class="forecast-item">
+                            <span class="day">Wed</span>
+                            <div class="forecast-icon">🌧️</div>
+                            <span class="rain-percent">80%</span>
+                            <span class="low-temp">22°</span>
+                            <div class="temp-bar">
+                                <div class="temp-range-bar">
+                                    <div class="temp-fill" style="left: 20%; width: 50%;"></div>
+                                </div>
+                            </div>
+                            <span class="high-temp">26°</span>
+                        </div>
+                        <div class="forecast-item">
+                            <span class="day">Thu</span>
+                            <div class="forecast-icon">🌧️</div>
+                            <span class="rain-percent">75%</span>
+                            <span class="low-temp">22°</span>
+                            <div class="temp-bar">
+                                <div class="temp-range-bar">
+                                    <div class="temp-fill" style="left: 20%; width: 50%;"></div>
+                                </div>
+                            </div>
+                            <span class="high-temp">26°</span>
+                        </div>
+                        <div class="forecast-item">
+                            <span class="day">Fri</span>
+                            <div class="forecast-icon">🌧️</div>
+                            <span class="rain-percent">75%</span>
+                            <span class="low-temp">22°</span>
+                            <div class="temp-bar">
+                                <div class="temp-range-bar">
+                                    <div class="temp-fill" style="left: 20%; width: 50%;"></div>
+                                </div>
+                            </div>
+                            <span class="high-temp">26°</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="precipitation-section">
+                    <h3>💧 PRECIPITATION</h3>
+                    <div class="precipitation-map">
+                        <div class="map-location" style="top: 15%; left: 60%;">Junnar</div>
+                        <div class="map-location" style="top: 25%; right: 15%;">Bhalwani</div>
+                        <div class="map-location" style="top: 15%; left: 25%;">Mathejan</div>
+                        <div class="map-location" style="bottom: 35%; right: 20%;">Shirur</div>
+                        <div class="map-location" style="bottom: 25%; left: 15%;">Lonavala</div>
+                        <div class="map-location" style="bottom: 25%; right: 10%;">Daund</div>
+                        <div class="map-location" style="bottom: 15%; left: 25%;">Pirangut</div>
+                        <div class="map-location" style="bottom: 20%; left: 35%;">Lavasa</div>
+                        
+                        <div class="current-location">
+                            <div class="location-pin">25</div>
+                            <div class="location-label">My Location</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
