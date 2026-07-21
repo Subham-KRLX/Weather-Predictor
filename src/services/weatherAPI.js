@@ -325,4 +325,5 @@ class WeatherAPIService {
   }
 }
 
+export { WeatherAPIService };
 export default new WeatherAPIService();
